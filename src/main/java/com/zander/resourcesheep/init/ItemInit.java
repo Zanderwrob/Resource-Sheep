@@ -11,7 +11,7 @@ import java.util.function.Supplier;
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ResourceSheep.MOD_ID);
 
-    public static final RegistryObject<Item> EXAMPLE_ITEM = register("example item", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item", () -> new Item(new Item.Properties()
 // Example Item's Properties
             .tab(ResourceSheep.RESOURCESHEEP_TAB)
     ));

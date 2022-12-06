@@ -7,7 +7,7 @@ version="${file.jarVersion}"
 displayName="Resource Sheep"
 # We'll work on this later - logoFile="examplemod.png"
 credits="All thanks to me, and my minecraft crew"
-authors="TheZaNmAN"
+authors="TheZanMan"
 description='''
 A mod that takes another approach to resource gathering, feeding a nuturing sheep that will produce you resources.
 

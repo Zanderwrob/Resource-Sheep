@@ -1,7 +1,6 @@
 package com.zander.resourcesheep;
 
 import com.zander.resourcesheep.init.ItemInit;
-import net.minecraft.world.entity.animal.Sheep;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
@@ -10,7 +9,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import oshi.hardware.common.AbstractUsbDevice;
+import org.jetbrains.annotations.NotNull;
 
 @Mod("resourcesheep")
 public class ResourceSheep {
@@ -20,8 +19,7 @@ public class ResourceSheep {
     public static final CreativeModeTab RESOURCESHEEP_TAB = new CreativeModeTab(MOD_ID) {
         @Override
         @OnlyIn(Dist.CLIENT)
-        public ItemStack makeIcon() {
-
+        public @NotNull ItemStack makeIcon() {
             return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
         }
     };
