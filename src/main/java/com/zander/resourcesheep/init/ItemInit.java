@@ -1,6 +1,7 @@
 package com.zander.resourcesheep.init;
 
 import com.zander.resourcesheep.ResourceSheep;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -11,9 +12,13 @@ import java.util.function.Supplier;
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ResourceSheep.MOD_ID);
 
-    public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item", () -> new Item(new Item.Properties()
+    public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
+            () -> new Item(new Item.Properties()
+            .tab(CreativeModeTab.TAB_MISC)
+    ));
+    public static final RegistryObject<Item> EXAMPLE_ITEM2 = register("shears", () -> new Item(new Item.Properties()
 // Example Item's Properties
-            .tab(ResourceSheep.RESOURCESHEEP_TAB)
+            .tab(CreativeModeTab.TAB_MISC)
     ));
     public static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
         return ITEMS.register(name, item);

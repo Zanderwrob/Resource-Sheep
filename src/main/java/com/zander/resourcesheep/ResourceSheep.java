@@ -16,6 +16,7 @@ public class ResourceSheep {
 
     public static final String MOD_ID = "resourcesheep";
 
+/*
     public static final CreativeModeTab RESOURCESHEEP_TAB = new CreativeModeTab(MOD_ID) {
         @Override
         @OnlyIn(Dist.CLIENT)
@@ -23,6 +24,7 @@ public class ResourceSheep {
             return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
         }
     };
+*/
     public ResourceSheep() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
